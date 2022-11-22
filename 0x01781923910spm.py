@@ -51,9 +51,9 @@ headers_carsome = {
 'accept-encoding': 'gzip, deflate, br',
 'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
 # xox0q03482349dta
-data_qoala = json.dumps({"phone_number":"+62"+nomer,"channel":"WA"})
-data_sayur = json.dumps([{"operationName":"generateOTP","variables":{"destinationType":"whatsapp","identity":"+62"+nomer},"query":"mutation generateOTP($destinationType: String!, $identity: String!) {\n  generateOTP(destinationType: $destinationType, identity: $identity) {\n    id\n    __typename\n  }\n}"}])
-data_carsome = json.dumps({"username":nomer,"optType":1})
+data_qoala = json.dumps({"phone_number":"+62"+n01028378123,"channel":"WA"})
+data_sayur = json.dumps([{"operationName":"generateOTP","variables":{"destinationType":"whatsapp","identity":"+62"+n01028378123},"query":"mutation generateOTP($destinationType: String!, $identity: String!) {\n  generateOTP(destinationType: $destinationType, identity: $identity) {\n    id\n    __typename\n  }\n}"}])
+data_carsome = json.dumps({"username":n01028378123,"optType":1})
 
 for k in range(pieces2342193):
   k += 1
